@@ -1,0 +1,55 @@
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DİZİ KANALLARI</title>
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
+	  <button class="w3-bar-item w3-button w3-hide-large"
+		onclick="w3_close()">Close &times;</button>
+	  <a href="index.html" class="w3-bar-item w3-button">ANASAYFA</a>
+	  <a href="ulusal.html" class="w3-bar-item w3-button">ULUSAL</a>
+	  <a href="yerel.html" class="w3-bar-item w3-button">YEREL</a>
+	  <a href="spor.html" class="w3-bar-item w3-button">SPOR</a>
+	  <a href="haber.html" class="w3-bar-item w3-button">HABER</a>
+	  <a href="cocuk.html" class="w3-bar-item w3-button">ÇOCUK</a>
+	  <a href="belgesel.html" class="w3-bar-item w3-button">BELGESEL</a>
+	  <a href="sinema.html" class="w3-bar-item w3-button">SİNEMA</a>
+	  <a href="dizi.html" class="w3-bar-item w3-button">DİZİ</a>
+	  <a href="muzik.html" class="w3-bar-item w3-button">MÜZİK</a>
+	  <a href="eba.html" class="w3-bar-item w3-button">EBA</a>
+	</div>
+
+
+	<div class="w3-main" style="margin-left:200px">
+
+	  <div class="w3-teal">
+		<button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+		<div class="w3-container">
+		  <h1>DİZİ KANALLARI M3U8</h1>
+		  
+		  <video width="480" height="320" src="https://x.cdnrectvs.live/24/index.m3u8" style="margin-top:30px;" controls>
+			
+		  </video>
+		  
+		  <video width="480" height="320" src="https://x.cdnrectvs.live/22/index.m3u8" style="margin-top:30px;" controls>
+			
+		  </video>
+		  
+		  
+		</div>
+	  </div>
+	</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+  </body>
+</html>
